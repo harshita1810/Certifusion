@@ -1,0 +1,4 @@
+{
+    "environment":"local",
+    "DB_STRING":"mongodb+srv://admin:admin1234@cluster0.bny17md.mongodb.net/greencertify?retryWrites=true&w=majority&appName=Cluster0"
+}

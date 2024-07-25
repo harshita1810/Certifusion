@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificate</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Freckle+Face&family=Monoton&family=Young+Serif&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: Young Serif;
+        }
+
+        .main-cont{
+            width: 100%;
+        }
+        .certificate-container {
+            /* padding: 50px; */
+            width: 100%;
+            height : 150%;
+            /* margin: auto; */
+        }
+        .certificate {
+            background-color: rgba(173, 221, 229, 0.603);
+            border: 20px solid #02b042;
+            padding: 25px;
+            height: 600px;
+            position: relative;
+            width: calc(100% - 40px); /* Considering left and right border width */
+            max-width: 100%;
+        }
+
+       
+        .certificate-header > .logo {
+            width: 80px;
+            height: 80px;
+        }
+
+        .certificate-title {
+            text-align: center;    
+            font-size:19px;
+        }
+
+        .certificate-body {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        h1 {
+
+            font-weight: 400;
+            font-size: 60px;
+            color: #0c8037;
+        }
+
+        .student-name {
+            font-size: 28px;
+            margin-bottom:30px;
+            color: red;
+        }
+
+        .certificate-content {
+            margin: 0 auto;
+            width: 750px;
+        }
+
+        .about-certificate {
+            font-size:17px;
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        .topic-description {
+            text-align: center;
+        }
+        p{
+            font-size:17px;
+        }
+        .certificate-id{
+            color:#777676;
+            position: absolute;
+            bottom:0;
+            left: 25px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-cont">
+    <div class="certificate-container">
+        <div class="certificate">
+            <div class="certificate-body">
+               
+                <p class="certificate-title"><strong>GO GREEN-GO CLEAN</strong></p>
+                <h1><strong>Certificate of Plantation</strong></h1>
+                <p class="student-name"><%= name %></p>
+                <div class="certificate-content">
+                    <div class="about-certificate">
+                        <p>
+                            Has actively participated in the Tree Plantation Drive organized by <strong>Go Green</strong>. The individual has contributed to the cause of environmental conservation by planting and nurturing <string></string><%= treesDonated %> trees by contributing $<%= amount %>.
+                        </p>
+                    </div>
+                </div>
+                <div class="certificate-content">
+                    <div class="about-certificate">
+                        This certificate is awarded in recognition of the dedication and commitment shown towards fostering a greener and healthier environment.
+                    </div>
+                </div>
+                <div class="certificate-footer text-muted">
+                    <!-- <div class="row">
+                        <div class="col-md-6">
+                            <p><strong>Principal: ______________________</strong></p>
+                        </div>
+                       
+                    </div> -->
+                </div>
+            </div>
+            <div class="certificate-id">
+                <p>Certificate Id: <%= certificateId %></p>
+              </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

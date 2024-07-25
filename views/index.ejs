@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tree Donation Form</title>
+    <style>
+        body{
+            height:100vh;
+            font-family:Arial, Helvetica, sans-serif;
+            font-size: 14px;
+            padding: 20px;
+            display: flex; 
+            justify-content: center;
+            align-items: center;
+            background:url('https://tse1.mm.bing.net/th?id=OIP.RZHvWSiQ8EmzaWWBFCBxuwHaDG&pid=Api&P=0&h=180') no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+        .container{
+            padding: 1.2rem;
+            position: relative;
+            width: 400px;
+            height: 450px;
+            background: transparent;
+            border: 2px solid rgba(255,255,255,0.5);
+            border-radius: 20px;
+            backdrop-filter: blur(15px);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap:0.7rem;
+        }
+        h1{
+            font-size:2.6rem;
+            color:#e1d4ce;
+        }
+        label{
+            font-size:1rem;
+            color:#d1b8ae;
+        }
+        input{
+            position: relative;
+            width:90%;
+            padding: .9rem;
+            margin: 1.2rem 0;
+            border: 1px solid #ffffff;
+            border-radius: 4px;
+        }
+        button{
+            position: relative;
+            transition: all .2s linear;
+            background-color: #4c75af;
+            color:#fff;
+            padding: .7rem .9rem;
+            border:none;
+            border-radius:10%;
+            cursor:pointer; 
+            margin-left:40% ;
+        }
+        button:hover{
+            background-color: #3454bd;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Tree Donation Form</h1>
+        <form action="/submit" method="post" enctype="multipart/form-data">
+            <label for="excelFile">Upload Excel File:</label>
+            <input type="file" name="excelFile" accept=".xlsx">
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
